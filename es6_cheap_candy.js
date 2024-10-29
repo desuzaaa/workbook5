@@ -11,7 +11,7 @@ let products = [
 // Which candies has "M&M" its name?
 // Do we carry "Swedish Fish"?
 
-let cheapCandy = () => {
+let cheapCandy = (product) => {
   return products.filter(product => product.price < 4);
   
 
@@ -20,14 +20,14 @@ console.log(cheapCandy());
 
 
 
-let ownChocolate = () => {
+let ownChocolate = (product) => {
     return products.filter(product => product.product.includes ("M&M"));
     
 }
 
 console.log(ownChocolate());
 
-let ownSwedishFish = () => {
+let ownSwedishFish = (product) => {
     return products.find(product => product.product == "Swedish Fish")
 }
 
