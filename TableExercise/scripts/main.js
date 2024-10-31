@@ -7,7 +7,7 @@ let threePointShooters = [
   },
   {
     name: "Klay Thompson",
-    team: "Golden State Warriors",
+    team: "Dallas Mavericks",
     position: "Guard",
     threePointPercentage: 41.2,
   },
@@ -61,27 +61,30 @@ let threePointShooters = [
   },
 ];
 
-let playersTBody = document.querySelector("#playersTBody")
+let playersTBody = document.querySelector("#playersTBody");
 console.log(playersTBody);
 
+threePointShooters.sort(function (playerA, playerB) {
+  return playerB.threePointPercentage - playerA.threePointPercentage;
+});
+
 for (const shooter of threePointShooters) {
-    
-    let tr = document.createElement("tr");
-    playersTBody.appendChild(tr)
-    
-    let td1 = document.createElement("td")
-    td1.innerText = shooter.name
-    playersTBody.appendChild(td1)
+  let tr = document.createElement("tr");
+  playersTBody.appendChild(tr);
 
-    let td2 = document.createElement("td")
-    td2.innerText = shooter.team
-    playersTBody.appendChild(td2)
+  let td1 = document.createElement("td");
+  td1.innerText = shooter.name;
+  playersTBody.appendChild(td1);
 
-    let td3 = document.createElement("td")
-    td3.innerText = shooter.position
-    playersTBody.appendChild(td3)
+  let td2 = document.createElement("td");
+  td2.innerText = shooter.team;
+  playersTBody.appendChild(td2);
 
-    let td4 = document.createElement("td")
-    td4.innerText = shooter.threePointPercentage
-    playersTBody.appendChild(td4)
+  let td3 = document.createElement("td");
+  td3.innerText = shooter.position;
+  playersTBody.appendChild(td3);
+
+  let td4 = document.createElement("td");
+  td4.innerText = shooter.threePointPercentage;
+  playersTBody.appendChild(td4);
 }
