@@ -25,7 +25,7 @@ let threePointShooters = [
   },
   {
     name: "Buddy Hield",
-    team: "Indiana Pacers",
+    team: "Golden State Warriors",
     position: "Guard",
     threePointPercentage: 42.5,
   },
@@ -55,7 +55,7 @@ let threePointShooters = [
   },
   {
     name: "Bojan Bogdanovic",
-    team: "Detroit Pistons",
+    team: "Brooklyn Nets",
     position: "Forward",
     threePointPercentage: 41.1,
   },
